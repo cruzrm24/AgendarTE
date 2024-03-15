@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AgendarTe</title>
+        <link rel="stylesheet" href="styles.css">
+        <script> "./script.js"</script>
+    </head>
+    <body>
+      <header>
+        <div class="logo">
+            <img src ="logo.png" alt = "logo"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+      </header>
+  
+    <section id="Home_Image">
+        <div class ="home_image">
+            <h1>US Visa Services</h1>
+            <p>Quick and Easy!</p>
+            <a href="contact.html"><button>Inquire Now</button></a>
+        </div>
+
+      </section>
+      <hr calss="line">
+      <section id="Connect">
+        <h3 class="section-heading">Connect with an expert!</h3>
+        <div class="connect-item">
+          <img src="schedule.png" width="100px" height="auto">
+          <p>Scheduling</p>
+          </p>
+        </div>
+        <div class="connect-item">
+          <img src="form.png" width="100px" height="auto">
+          <p>Form completion
+          </p>
+        </div>
+        <div class="connect-item">
+          <img src="advice.png" width="100px" height="auto">
+          <p>Personal advice</p>
+        </div>
+        <div class="connect-item">
+          <img src="post_visa.png" width="100px" height="auto">
+          <p>Post-visa services</p>
+          </p>
+        </div>
+      </section>
+      <hr calss="line">
+
+      <section id="Will-it-work">
+        <h3 class="section2-heading">Is AgendarTe right for you?</h3>
+        <div clas="container">
+          <div class="row">
+
+            <div class="para_mi">
+              <img src="Travel.png"/>
+                <h6>Do you love to travel?</h6>
+                <p> There are 195 countries in the world, why limit yourself to 194?</p>
+            </div>  
+            <div class="para_mi">
+              <img src="Family.png"/>
+                <h6>Does your family live far away?</h6>
+                <p>Nothing is worth more than your family and the only
+                thing that cannot be recovered is the time lost. 
+                Allow yourself to shorten that wait
+                </p>
+            </div>  
+    
+            <div class="para_mi">
+              <img src="Study.png"/>
+                <h6>Ready to study abroad? </h6>
+                <p>When you speak English you will see life differently,
+                  why wait so long?
+                </p>
+            </div>  
+              <div class="para_mi">
+                <img src="Work.png"/>
+                  <h6>Are you looking for new<br>
+                  opportunities?</h6>
+                  <p>Opportunities are never lost; Those who are prepared take advantage of them. If you don't act now,
+                  someone else will. Are you ready or will you let others take your place?
+                </p>
+              </div>  
+          </div>
+        </div>
+      </section>
+      <hr calss="line">
+
+      <!-- Services -->
+      <section class="services" id="services">
+        <div class="services-container">
+          <div class="services">
+            <h2> Our Services </h2>  
+
+              <h3>We make it simple!</h3>
+              <p>With AgendarTe, you  will be accompanied by a group of experts to
+                ensure you obtain your visa as quickly as possible.
+             </p>
+              <ul class="service-list">
+                <li>Visa applications and renewals </li>
+                <li>Form preperations and filing with the Embassy</li>
+                <li>Scheduling and rescheduling appointments </li>
+                <li>Personalized preparation and advice</li>
+                <li>Follow-up delivery of documents</li>
+              </ul>
+            </div>
+            <div class="image-container">
+              <div class="slide-fade">
+                <img src="form-apply.jpeg" alt="Image 1" width="600px" height="auto">
+              </div>
+             </div>
+          </div> 
+      </section>  
+      <hr calss="line">
+      <!-- Recommendation Form -->
+      <section id="contact">
+        <div class="flex_center">
+          <fieldset class="contact-form-box">
+            <legend class="introduction">Contact Us</legend>
+            <form id="contact_form" action="contact_form.php" method="post">
+              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)"> <br/>
+              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email"> <br/>
+              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject"> <br/>
+              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message"></textarea>
+              <!-- Add Captcha field here if necessary -->
+              <div class="flex_center">
+                <button id="contact_submit_btn" onclick="submitContactForm()">Submit</button>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+
+      </section>
+      
+      <div class="iconbutton" id="backToTopBtn">
+        <a href="index.html">
+          <img src="arrow.png" width="63px">
+          </svg>
+        </a>
+      </div>
+    </section>
+      <div class="popup" id="popup" class="flex_center">
+        <img src="check-mark.svg" width="50"/>
+        <h3>Thanks for contacting us!</h3>
+        <button onclick="hidePopup()">Ok</button>
+      </div>
+      
+      </div>
+      
+    </body>
+    <footer>
+  <div class="container">
+    <p>&copy; 2024 AgendarTe. All rights reserved.</p>
+  </div>
+</footer>
+</html>

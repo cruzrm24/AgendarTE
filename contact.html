@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AgendarTe</title>
+        <link rel="stylesheet" href="styles.css">
+        <script> "./script.js"</script>
+    </head>
+    <body>
+      <header>
+        <div class="logo">
+            <img src ="logo.png" alt = "logo"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+      </header>
+      <hr>
+
+      <section id="contact-page" class="flex_container1">
+        <div class="left-column">
+          <h2> Contacto</h2> 
+          <h3> Comunicate con nostoros!</h3>
+          <p> Deja que uno de nuestros expertos comunique contigo y te haga un analisis totalmente GRATIS de tu perfil.</p>
+            <div class="connect-item2">
+              <img src="location.svg" alt="pin" width="50px" height="auto">
+              <p>Santo Domingo, Republica Dominicana</p>
+            </div> 
+
+            <div class="connect-item2">
+              <img src="phone.svg" alt="phone" width="50px" height="auto">
+              <p> +1 (809)519-9351</p>
+            </div>
+
+            <div class="connect-item2">
+              <img src="mail.svg" alt="email" width="50px" height="auto">
+              <p> info@agendarterd.com</p>
+            </div>
+          </div>
+        <div class="right-column">
+          <fieldset class="contact-form-box2">
+            <legend class="introduction">Contact Us</legend>
+            <form id="contact_form" action="contact_form.php" method="post">
+              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)"> <br/>
+              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email"> <br/>
+              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject"> <br/>
+              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message"></textarea>
+
+              <div class="flex_center">
+                <button id="contact_submit_btn" onclick="submitContactForm()">Submit</button>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+      </section>
+
+      <section>
+        <div class="map-bottom">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121090.45254338218!2d-70.02945432242704!3d18.480187281379703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd6c587b82715c164!2sSanto%20Domingo%2C%20Dominican%20Republic!5e0!3m2!1sen!2sus!4v1710420771886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+        </div>
+      </div>
+    </section>
+      
+      <div class="iconbutton" id="backToTopBtn">
+        <a href="#top">
+          <img src="arrow.png" width="63px">
+          </svg>
+        </a>
+      </div>
+    </section>
+      <div class="popup" id="popup" class="flex_center">
+        <img src="check-mark.svg" width="50"/>
+        <h3>Thanks for contacting us!</h3>
+        <button onclick="hidePopup()">Ok</button>
+      </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgendarTe. All rights reserved.</p>
+        </div>
+    </footer>
+    </body>
+</html>

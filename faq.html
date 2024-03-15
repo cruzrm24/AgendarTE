@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AgendarTe</title>
+        <link rel="stylesheet" href="styles.css">
+        <script> "./script.js"</script>
+    </head>
+    <body>
+      <header>
+        <div class="logo">
+            <img src ="logo.png" alt = "logo"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      <section id="contact">
+        <div class="flex_center">
+          <fieldset class="contact-form-box">
+            <legend class="introduction">Contact Us</legend>
+            <form id="contact_form" action="contact_form.php" method="post">
+              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)"> <br/>
+              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email"> <br/>
+              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject"> <br/>
+              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message"></textarea>
+              <div class="flex_center">
+                <button id="contact_submit_btn" onclick="submitContactForm()">Submit</button>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+
+      </section>
+      
+      <div class="iconbutton" id="backToTopBtn">
+        <a href="index.html">
+          <img src="arrow.png" width="63px">
+          </svg>
+        </a>
+      </div>
+    </section>
+      <div class="popup" id="popup" class="flex_center">
+        <img src="check-mark.svg" width="50"/>
+        <h3>Thanks for contacting us!</h3>
+        <button onclick="hidePopup()">Ok</button>
+      </div>
+      
+      </div>
+      
+    </body>
+    <footer>
+  <div class="container">
+    <p>&copy; 2024 AgendarTe. All rights reserved.</p>
+  </div>
+</footer>
+</html>
