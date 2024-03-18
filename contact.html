@@ -46,16 +46,16 @@
         <div class="right-column">
           <fieldset class="contact-form-box2">
             <legend class="introduction">Contact Us</legend>
-            <form id="contact_form" action="contact_form.php" method="post">
-              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)"> <br/>
-              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email"> <br/>
-              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject"> <br/>
-              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message"></textarea>
-
+            <form id="contact_form">
+              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)" required> <br/>
+              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email" required> <br/>
+              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject" required> <br/>
+              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message" required></textarea>
+              <!-- Add Captcha field here if necessary -->
               <div class="flex_center">
-                <button id="contact_submit_btn" onclick="submitContactForm()">Submit</button>
+                  <button id="contact_submit_btn">Submit</button>
               </div>
-            </form>
+          </form>
           </fieldset>
         </div>
       </section>
@@ -74,11 +74,6 @@
         </a>
       </div>
     </section>
-      <div class="popup" id="popup" class="flex_center">
-        <img src="check-mark.svg" width="50"/>
-        <h3>Thanks for contacting us!</h3>
-        <button onclick="hidePopup()">Ok</button>
-      </div>
     <footer>
         <div class="container">
             <p>&copy; 2024 AgendarTe. All rights reserved.</p>

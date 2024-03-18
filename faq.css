@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #032C62;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #C52B2B;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-left: 20px;
+
+}
+header {
+    background-color: #fff;
+        color: var(--primary-color);
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+nav ul {
+    list-style-type: none;
+        margin: 10;
+        padding: 0;
+}
+    
+nav ul li {
+    display: inline;
+}
+    
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    padding: 20px;
+}
+            
+nav ul li a:hover {
+color: white;
+background-color: darkblue;
+}
+  
+  /* styles.css */
+.line {
+    border: 1px solid black; /* Define border properties */
+    margin: 10px 0; /* Adjust margin to create space above and below the line */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+    margin-top: 20px; /* Add margin to create space between contact form and footer */
+  }
+  
+  .iconbutton {
+    position: fixed;
+    right: 20px; /* Adjust this value to your preference */
+    bottom: 20px; /* Adjust this value to your preference */
+    z-index: 9999; /* Ensure it's above other content */
+  }
+ #faq-header {
+    background-color: #C52B2B;
+    text-align: center;
+    color: #fff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+ }
+
+ #faq-header h1{
+    font-size: 36px;
+ }
+ 
+p {
+    font-family: sans-serif;
+    
+}
+
+.hiddenText {
+    display: none;
+    margin: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#questions {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right-column,
+.left-column{
+    padding: 10x;
+}
+
+.column {
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+/* CSS */
+.custom-button {
+    width: 10px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.custom-button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.button-container {
+    display: flex;
+    align-items: right; /* Align items vertically in the center */
+}
+
+.custom-button {
+    margin-left: 10px; /* Add margin between the text and the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#question-form{
+    align-items: center;
+    text-align: center;
+}
+
+.question-form {
+    margin-top: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.question-form h3 {
+    font-size: 18px;
+}
+
+.question-form form {
+    margin-top: 10px;
+}
+
+.question-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.question-form textarea {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.question-form input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

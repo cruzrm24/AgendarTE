@@ -1,63 +1,159 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AgendarTe</title>
-        <link rel="stylesheet" href="styles.css">
-        <script> "./script.js"</script>
-    </head>
-    <body>
-      <header>
-        <div class="logo">
-            <img src ="logo.png" alt = "logo"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendarTe</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="logo"/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="faq-header">
+    <h1>Frequently Asked Questions</h1>
+</section>
+
+<section id="questions" class="grid-container">
+    <div class ="left-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Is it safe to provide my details to reschedule my appointment?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer1')" class="custom-button">
+            </div>
+         </div>
+        <p class="hiddenText" id="answer1">Absolutely. We value your privacy and use cutting-edge encryption systems to ensure your data is protected at all times.</p>
+    </div>
+
+    <div class="left-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Why should I pay for this when I can do it myself?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer2')" class="custom-button">
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-      </header>
-      <section id="contact">
-        <div class="flex_center">
-          <fieldset class="contact-form-box">
-            <legend class="introduction">Contact Us</legend>
-            <form id="contact_form" action="contact_form.php" method="post">
-              <input type="text" id="contact_name" name="contact_name" placeholder="Your Name (Optional)"> <br/>
-              <input type="email" id="contact_email" name="contact_email" placeholder="Your Email"> <br/>
-              <input type="text" id="contact_subject" name="contact_subject" placeholder="Subject"> <br/>
-              <textarea id="contact_message" name="contact_message" cols="50" rows="5" placeholder="Message"></textarea>
-              <div class="flex_center">
-                <button id="contact_submit_btn" onclick="submitContactForm()">Submit</button>
-              </div>
-            </form>
-          </fieldset>
+    </div>
+        <p class="hiddenText" id="answer2">Of course, anyone can try to reschedule their appointment manually. What we offer is the convenience and efficiency of our system that works 24 hours a day, every day, without getting tired or distracted. You save time, avoid frustration and maximize your chances of achieving a date change.</p>
+    </div>
+
+    <div class="left-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Is the process legitimate and adheres to embassy rules?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer3')" class="custom-button">
+            </div>
+        </div>
+            <p class="hiddenText" id="answer3">Completely. We only facilitate the appointment rescheduling process while respecting all official procedures. We do not take shortcuts or employ practices that are unethical or legal.</p>
+    </div>
+    <div class="left-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Do you have customer support in case of problems?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer4')" class="custom-button">
+            </div>
         </div>
 
-      </section>
-      
-      <div class="iconbutton" id="backToTopBtn">
-        <a href="index.html">
-          <img src="arrow.png" width="63px">
-          </svg>
-        </a>
-      </div>
-    </section>
-      <div class="popup" id="popup" class="flex_center">
-        <img src="check-mark.svg" width="50"/>
-        <h3>Thanks for contacting us!</h3>
-        <button onclick="hidePopup()">Ok</button>
-      </div>
-      
-      </div>
-      
-    </body>
-    <footer>
-  <div class="container">
-    <p>&copy; 2024 AgendarTe. All rights reserved.</p>
-  </div>
+            <p class="hiddenText" id="answer4">Of course! Although we have complete confidence in our technology, we also have a support team ready to help you with any concerns or problems you may have.</p>
+    </div>
+    <div class="left-column">
+        <div class="column">
+            <div class="button-container">
+                <p>How much time could I save by using your service?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer5')" class="custom-button">
+            </div>
+        </div>
+
+        <p class="hiddenText" id="answer5">Although we cannot guarantee a specific time, we are proud to mention that 9 out of 10 clients have managed to advance their appointments by trusting us. In many cases, they get dates that are several months or even a year ahead of what they would have gotten trying on their own.</p>
+    </div>
+    <div class="right-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Does the service have any cost?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer6')" class="custom-button">
+            </div>
+        </div>  
+
+        <p class="hiddenText" id="answer6">Yes, we charge a fee for our rescheduling service. But it is important to consider that, by trusting us, you are not only investing in a service, but in the opportunity to save valuable time and the possibility of traveling to the US sooner. For many of our clients, the benefits obtained far exceed the initial investment.</p>
+    </div>
+    <div class="right-column">
+        <div class="column">
+            <div class="button-container">
+                <p>Is my visa guaranteed with your service?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer7')" class="custom-button">
+            </div>
+        </div>
+             <p class="hiddenText" id="answer7">We would like to! But we must be transparent with you: we have no control over the decisions of the US embassy. What we do do is speed up your appointment process, but approval depends on your information and the embassy's criteria.</p>
+    </div>
+    <div class="right-column">
+        <div class="column">
+            <div class="button-container">
+
+                <p>What guarantees do they offer about the results?</p>
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer8')" class="custom-button">
+            </div>
+        </div>
+        <p class="hiddenText" id="answer8">We want to be totally transparent with you. We cannot guarantee a specific date as we depend on appointments released by the embassy, ​​which is out of our control. However, we want you to have complete confidence in us. We are experts at finding appointments before anyone else thanks to our automated system and dedicated experts working 24/7. In fact, 90% of our clients have managed to advance their appointments with us. So, if you decide to use our services, you can be sure that we will do everything possible to get you the earliest appointment possible.</p>
+    </div>
+
+    <div class="right-column">
+        <div class="column">
+            <div class="button-container">
+
+                <p>How will you keep me informed about my rescheduling?</p> 
+                <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer9')" class="custom-button">
+            </div>
+        </div>
+    <p class="hiddenText" id="answer9">You will receive notifications through WhatsApp throughout the process and an email from the embassy every time we reschedule your appointment.</p>
+</div>
+
+ <div class="right-column">
+    <div class="column">
+        <div class="button-container">
+
+        <p>Can I choose specific dates or times for my appointment?        </p>
+        <img src="down-arrow.svg" alt="Show Answer" onclick="revealText('answer10')" class="custom-button">
+    </div>
+</div>
+    <!-- Hidden text for question 2 -->
+    <p class="hiddenText" id="answer10">Unfortunately not. Appointment dates and times are determined by the US embassy, ​​making availability unpredictable. However, we do our best to get you the earliest possible appointment.</p>
+</div>
+
+<div id="new-question"></div>
+</section>
+<section>
+
+<div id="question-form">
+    <h3>Have a question? Ask away!</h3>
+    <form action="#" method="post">
+        <textarea id="question" name="question" rows="4" cols="25"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</section>
+
+<div class="iconbutton" id="backToTopBtn">
+    <a href="#top">
+        <img src="arrow.png" width="63px">
+    </a>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 AgendarTe. All rights reserved.</p>
+    </div>
 </footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
