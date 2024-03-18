@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #032C62;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #C52B2B;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-left: 10px;
+
+}
+header {
+    background-color: #fff;
+        color: var(--primary-color);
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+nav ul {
+    list-style-type: none;
+        margin: 10;
+        padding: 0;
+}
+    
+nav ul li {
+    display: inline;
+}
+    
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    padding: 20px;
+}
+            
+nav ul li a:hover {
+color: white;
+background-color: darkblue;
+}
+  
+  /* styles.css */
+.line {
+    border: 1px solid black; /* Define border properties */
+    margin: 10px 0; /* Adjust margin to create space above and below the line */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Arial Narrow Bold';
+    text-align: center;
+    margin-top: 20px; /* Add margin to create space between contact form and footer */
+  }
+  
+  .iconbutton {
+    position: fixed;
+    right: 20px; /* Adjust this value to your preference */
+    bottom: 20px; /* Adjust this value to your preference */
+    z-index: 9999; /* Ensure it's above other content */
+  }
+
+  #services-header {
+    margin: 30px;
+    font-size: x-large;
+    color: #032C62;
+    text-align: center;
+  }
+
+  #services-header p{
+    font-family: "Arial Narrow Bold";
+  }
+
+#services-offered {
+    margin: 20px;
+    padding: 10px;
+    color:#C52B2B;
+    font-size: larger;
+}
+
+li {
+    margin-left: 30px;
+    font-family: 'Arial Bold Narrow';
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+#services-offered h2{
+    margin-bottom: 20px;
+}
+#services-offered p {
+    color: var(--primary-color);
+    font-family: 'Arial Bold Narrow';
+    margin-bottom: 20px;
+}
+
+.visas {
+    display: flex
+}
+
+.first-image img{
+    max-width: 450px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.renewals {
+    display: flex;
+}
+
+.second-image {
+    max-width: 450px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.appointments{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second-image img {
+    max-width: 350px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.appointments li{
+    margin-left: 40px;
+}
+
+.interview{
+    display: table-row;
+    margin-top: 30px;
+}
+.fourth-image {
+    max-width: 48%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.document-prep{
+    display: flex;
+    justify-content: space-between;
+}
+
+.doc-prep{
+    flex: 1;
+}
+
+.fifth-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.fifth-image img {
+    max-width:100%;
+    height: auto;
+}
